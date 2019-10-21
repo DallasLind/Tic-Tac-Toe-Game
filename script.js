@@ -1,7 +1,7 @@
 console.log("Hello game!");
 
 //What I'm defining for my board as far as players and squares go
-let currentPlayer = document.querySelector('#current-player');
+let player = document.querySelector('#player');
 const reset = document.querySelector("button");
 const squares = document.querySelectorAll(".square");
 
