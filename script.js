@@ -1,10 +1,8 @@
 console.log("Hello game!");
 
 //What I'm defining for my board as far as players and squares go
-let playerOne = 1;
+let player = document.querySelector('#player');
 const reset = document.querySelector("button");
-let board = document.getElementById("board");
-board.addEventListener("click", boardClick);
 const squares = document.querySelectorAll(".square");
 
 const sq1 = document.querySelector("#square1");
@@ -33,6 +31,26 @@ let winningMoves = [
 ];
 
 //Starting the game functionality
+
+for (let i = 0; i < squares.length; i++) {
+    squares[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        if (squares[i].style.backgroundColor !== 'red' && squares[i].style.backgroundColor !== 'blue') {
+            if (player.classList.contains('red')) {
+                squares[i].style.backgroundColor = 'red';
+                player.classList.toggle('red');
+                player.classList.toggle('blue');
+                player.innerHTML = 'Go Blue';
+                winLogic();
+            } else {
+                squares[i].style.backgroundColor = 'blue';
+                player.classList.toggle('blue');
+                player.classList.toggle('red');
+                player.innerHTML = 'Go Red';
+                winLogic();
+            }
+        };
+}
 
 function winLogic(){
 	if (sq1.style.backgroundColor == "red" && sq2.style.backgroundColor == "red" && sq3.style.backgroundColor == "red"){
