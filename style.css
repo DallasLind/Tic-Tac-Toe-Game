@@ -1,0 +1,17 @@
+body {
+	-webkit-animation: colorchange 20s;
+	animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes colorchange {
+	0% {background: #923A95;}
+	25% {background: #D03DCB;}
+	50% {background: #D51CB6;}
+	75% {background: #ED50D3;}
+	100% {background: #ED87DC;}
+}
+
+h1 {
+	font-family: 'Fira Code', monospace;
+	text-align: center;
+}
