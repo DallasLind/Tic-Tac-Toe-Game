@@ -17,16 +17,9 @@ h1 {
 	text-align: center;
 }
 
-td{
-	border: 1px solid black;
-	height: 150px;
-	width: 150px;
+.board {
+    background-color: white;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
 }
-
-table {
-	justify-content: center;
-	display: inline-flex;
-	align-items: center;
-
-}
-
