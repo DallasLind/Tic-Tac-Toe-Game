@@ -34,14 +34,14 @@ let winningMoves = [
 
 //Starting the game functionality
 
-for(let i = 0; i<squares.length; i++){
-	squares[i].addEventListener("click", playerMove);
-
-	function playerMove(evt){
-		evt.preventDefault();
-		if(playerOne === 1){
-
+function win() {
+	for(let i = 0; i < squares.length; i++){
+		if(board[winningMoves[i][0]].clicked === "red"
+			&& board[winningMoves[i][1]].clicked === "red"
+			&& board[winningMoves[i][2]].clicked === "red") {
+			winner = "red";
 		}
 	}
+}
 
 
