@@ -34,6 +34,26 @@ let winningMoves = [
 
 //Starting the game functionality
 
-
+function winLogic(){
+	if (sq1.style.backgroundColor == "red" && sq2.style.backgroundColor == "red" && sq3.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq4.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq6.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq7.style.backgroundColor == "red" && sq8.style.backgroundColor == "red" && sq9.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq1.style.backgroundColor == "red" && sq4.style.backgroundColor == "red" && sq7.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq2.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq8.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq3.style.backgroundColor == "red" && sq6.style.backgroundColor == "red" && sq9.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq1.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq9.style.backgroundColor == "red"){
+		console.log("Red");
+	} else if (sq3.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq7.style.backgroundColor == "red"){
+		console.log("Red");
+	} else {
+		console.log("Hello again game!");
+	}
+};
 
 
