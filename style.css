@@ -18,8 +18,17 @@ h1 {
 }
 
 .board {
-    background-color: white;
+    background-color: transparent;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
