@@ -85,6 +85,11 @@ function winLogic(){
 		alert('Blue Wins!');
 	} else if (squares[2].style.backgroundColor == "blue" && squares[4].style.backgroundColor == "blue" && squares[6].style.backgroundColor == "blue"){
 		alert('Blue Wins!');
-}};
+	}else if (squares[0].style.backgroundColor !== '' && squares[1].style.backgroundColor !== '' && squares[2].style.backgroundColor !== '' && squares[3].style.backgroundColor !== '' && squares[4].style.backgroundColor !== '' && squares[5].style.backgroundColor !== '' && squares[6].style.backgroundColor !== '' && squares[7].style.backgroundColor !== '' && squares[8].style.backgroundColor !== ''){
+		alert("It's a Tie!");
+	}};
+		
+
+
 
 
