@@ -55,31 +55,23 @@ for (let i = 0; i < squares.length; i++) {
     });
 }
 
-
-
-
-
-
-
-
-
 function winLogic(){
-	if (sq1.style.backgroundColor == "red" && sq2.style.backgroundColor == "red" && sq3.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq4.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq6.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq7.style.backgroundColor == "red" && sq8.style.backgroundColor == "red" && sq9.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq1.style.backgroundColor == "red" && sq4.style.backgroundColor == "red" && sq7.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq2.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq8.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq3.style.backgroundColor == "red" && sq6.style.backgroundColor == "red" && sq9.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq1.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq9.style.backgroundColor == "red"){
-		console.log("Red");
-	} else if (sq3.style.backgroundColor == "red" && sq5.style.backgroundColor == "red" && sq7.style.backgroundColor == "red"){
-		console.log("Red");
+	if (squares[0].style.backgroundColor == "red" && squares[1].style.backgroundColor == "red" && squares[2].style.backgroundColor == "red"){
+		alert('Red Wins!');
+	} else if (squares[3].style.backgroundColor == "red" && squares[4].style.backgroundColor == "red" && squares[5].style.backgroundColor == "red"){
+		alert("Red Wins!");
+	} else if (squares[6].style.backgroundColor == "red" && squares[7].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
+		alert("Red Wins!");
+	} else if (squares[0].style.backgroundColor == "red" && squares[3].style.backgroundColor == "red" && squares[6].style.backgroundColor == "red"){
+		alert("Red Wins!");
+	} else if (squares[2].style.backgroundColor == "red" && squares[5].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
+		alert("Red Wins!");
+	} else if (squares[2].style.backgroundColor == "red" && squares[5].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
+		alert("Red Wins!");
+	} else if (squares[0].style.backgroundColor == "red" && squares[4].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
+		alert("Red Wins!");
+	} else if (squares[2].style.backgroundColor == "red" && squares[4].style.backgroundColor == "red" && squares[6].style.backgroundColor == "red"){
+		alert("Red Wins!");
 	} else {
 		console.log("Hello again game!");
 	}
