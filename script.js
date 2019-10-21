@@ -90,7 +90,7 @@ function winLogic(){
 	}};
 
 	reset.addEventListener('click', function(evt){
-		squares.style.backgroundColor == white;
+		location.reload();
 	})
 		
 
