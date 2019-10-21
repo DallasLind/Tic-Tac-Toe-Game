@@ -66,15 +66,25 @@ function winLogic(){
 		alert("Red Wins!");
 	} else if (squares[2].style.backgroundColor == "red" && squares[5].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
 		alert("Red Wins!");
-	} else if (squares[2].style.backgroundColor == "red" && squares[5].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
-		alert("Red Wins!");
 	} else if (squares[0].style.backgroundColor == "red" && squares[4].style.backgroundColor == "red" && squares[8].style.backgroundColor == "red"){
 		alert("Red Wins!");
 	} else if (squares[2].style.backgroundColor == "red" && squares[4].style.backgroundColor == "red" && squares[6].style.backgroundColor == "red"){
 		alert("Red Wins!");
-	} else {
-		console.log("Hello again game!");
-	}
-};
+	//Below is the conditional for Blue Wins. Will have to figure out how to shorten this if with switch statements or not
+	} else if (squares[0].style.backgroundColor == "blue" && squares[1].style.backgroundColor == "blue" && squares[2].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+	} else if (squares[3].style.backgroundColor == "blue" && squares[4].style.backgroundColor == "blue" && squares[5].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+	} else if (squares[6].style.backgroundColor == "blue" && squares[7].style.backgroundColor == "blue" && squares[8].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+	} else if (squares[0].style.backgroundColor == "blue" && squares[3].style.backgroundColor == "blue" && squares[6].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+	} else if (squares[2].style.backgroundColor == "blue" && squares[5].style.backgroundColor == "blue" && squares[8].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+	} else if (squares[0].style.backgroundColor == "blue" && squares[4].style.backgroundColor == "blue" && squares[8].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+	} else if (squares[2].style.backgroundColor == "blue" && squares[4].style.backgroundColor == "blue" && squares[6].style.backgroundColor == "blue"){
+		alert('Blue Wins!');
+}};
 
 
