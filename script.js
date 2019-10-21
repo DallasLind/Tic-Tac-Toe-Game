@@ -21,27 +21,19 @@ const sq9 = document.querySelector("#square9");
 
 let winningMoves = [
 
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-  [1, 4, 7],
-  [2, 3, 8],
-  [3, 6, 9],
-  [1, 5, 9],
-  [7, 5, 3]
+  ["sq1", "sq2", "sq3"],
+  ["sq4", "sq5", "sq6"],
+  ["sq7", "sq8", "sq9"],
+  ["sq1", "sq4", "sq7"],
+  ["sq2", "sq3", "sq8"],
+  ["sq3", "sq6", "sq9"],
+  ["sq1", "sq5", "sq9"],
+  ["sq7", "sq5", "sq3"]
 
 ];
 
 //Starting the game functionality
 
-function win() {
-	for(let i = 0; i < squares.length; i++){
-		if(board[winningMoves[i][0]].clicked === "red"
-			&& board[winningMoves[i][1]].clicked === "red"
-			&& board[winningMoves[i][2]].clicked === "red") {
-			winner = "red";
-		}
-	}
-}
+
 
 
