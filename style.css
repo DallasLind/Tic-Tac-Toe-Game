@@ -37,3 +37,16 @@ h1 {
 	color: #E5AAAA;
 	font-family: 'Fira Code', monospace;
 }
+
+button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family: 'Fira Code', monospace;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+}

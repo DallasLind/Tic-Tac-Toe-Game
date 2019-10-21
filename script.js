@@ -33,8 +33,8 @@ let winningMoves = [
 //Starting the game functionality
 
 for (let i = 0; i < squares.length; i++) {
-    squares[i].addEventListener('click', function(e) {
-        e.preventDefault();
+    squares[i].addEventListener('click', function(evt) {
+        evt.preventDefault();
         if (squares[i].style.backgroundColor !== 'red' && squares[i].style.backgroundColor !== 'blue') {
             if (player.classList.contains('red')) {
                 squares[i].style.backgroundColor = 'red';
@@ -88,6 +88,10 @@ function winLogic(){
 	}else if (squares[0].style.backgroundColor !== '' && squares[1].style.backgroundColor !== '' && squares[2].style.backgroundColor !== '' && squares[3].style.backgroundColor !== '' && squares[4].style.backgroundColor !== '' && squares[5].style.backgroundColor !== '' && squares[6].style.backgroundColor !== '' && squares[7].style.backgroundColor !== '' && squares[8].style.backgroundColor !== ''){
 		alert("It's a Tie!");
 	}};
+
+	reset.addEventListener('click', function(evt){
+		squares.style.backgroundColor == white;
+	})
 		
 
 
