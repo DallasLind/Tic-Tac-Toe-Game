@@ -1,5 +1,5 @@
 body {
-	-webkit-animation: colorchange 20s;
+	-webkit-animation: colorchange 10s;
 	animation-iteration-count:infinite;
 	text-align: center;
 }
@@ -9,7 +9,7 @@ body {
 	25% {background: #D03DCB;}
 	50% {background: #D51CB6;}
 	75% {background: #ED50D3;}
-	100% {background: #ED87DC;}
+	100% {background: #923A95;}
 }
 
 h1 {
@@ -22,6 +22,7 @@ h1 {
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
     position: relative;
+    cursor: crosshair;
 }
 
 .square {
