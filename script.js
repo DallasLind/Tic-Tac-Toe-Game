@@ -1,7 +1,7 @@
 console.log("Hello game!");
 
 //What I'm defining for my board as far as players and squares go
-let player = document.querySelector('#player');
+let currentPlayer = document.querySelector('#current-player');
 const reset = document.querySelector("button");
 const squares = document.querySelectorAll(".square");
 
@@ -19,14 +19,14 @@ const sq9 = document.querySelector("#square9");
 
 let winningMoves = [
 
-  ["sq1", "sq2", "sq3"],
-  ["sq4", "sq5", "sq6"],
-  ["sq7", "sq8", "sq9"],
-  ["sq1", "sq4", "sq7"],
-  ["sq2", "sq3", "sq8"],
-  ["sq3", "sq6", "sq9"],
-  ["sq1", "sq5", "sq9"],
-  ["sq7", "sq5", "sq3"]
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [1, 4, 7],
+  [2, 3, 8],
+  [3, 6, 9],
+  [1, 5, 9],
+  [7, 5, 3]
 
 ];
 
@@ -40,17 +40,28 @@ for (let i = 0; i < squares.length; i++) {
                 squares[i].style.backgroundColor = 'red';
                 player.classList.toggle('red');
                 player.classList.toggle('blue');
-                player.innerHTML = 'Go Blue';
+                player.innerHTML = 'Go blue!';
                 winLogic();
             } else {
                 squares[i].style.backgroundColor = 'blue';
                 player.classList.toggle('blue');
                 player.classList.toggle('red');
-                player.innerHTML = 'Go Red';
+                player.innerHTML = 'Go red!';
                 winLogic();
             }
-        };
+        } else {
+            alert('Oops, try an unclicked square!');
+        }
+    });
 }
+
+
+
+
+
+
+
+
 
 function winLogic(){
 	if (sq1.style.backgroundColor == "red" && sq2.style.backgroundColor == "red" && sq3.style.backgroundColor == "red"){
