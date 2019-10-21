@@ -1,5 +1,6 @@
 console.log("Hello game!");
 
+//What I'm defining for my board as far as players and squares go
 let playerOne = 1;
 const reset = document.querySelector("button");
 let board = document.getElementById("board");
@@ -16,6 +17,8 @@ const sq7 = document.querySelector("#square7");
 const sq8 = document.querySelector("#square8");
 const sq9 = document.querySelector("#square9");
 
+//What players need to hit in order to win
+
 let winningMoves = [
 
   [1, 2, 3],
@@ -29,9 +32,7 @@ let winningMoves = [
 
 ];
 
-
-
-
+//Starting the game functionality
 
 for(let i = 0; i<squares.length; i++){
 	squares[i].addEventListener("click", playerMove);
